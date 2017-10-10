@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }} - {{ $title ? $title : "Welcome to SBMA SBFIIS" }}</title>
+    <title>{{ config('app.name', 'Laravel') }} - {{ isset($title) && $title ? $title : "Welcome to SBMA SBFIIS" }}</title>
 
     <!-- Styles -->
     <link href="{{ base_path('node_modules/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
