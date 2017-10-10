@@ -11,7 +11,7 @@
     <title>{{ config('app.name', 'Laravel') }} - {{ isset($title) && $title ? $title : "Welcome to SBMA SBFIIS" }}</title>
 
     <!-- Styles -->
-    <link href="{{ base_path('node_modules/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -75,7 +75,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ base_path('node_modules/jquery/dist/js/jquery.min.js') }}"></script>
-    <script src="{{ base_path('node_modules/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('bower_components/jquery/dist/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 </body>
 </html>
