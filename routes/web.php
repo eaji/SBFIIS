@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// CR CRTE
+Route::get('/renew/cr-crte/{id?}', 'CrCrteController@index')->name('renew.cr-crte');
+Route::post('/renew/cr-crte', 'CrCrteController@store')->name('renew.cr-crte.store');
