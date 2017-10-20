@@ -11,29 +11,38 @@ header .btn-xl {
   background-color: rgb(125,172,63);
 }
 
-header{
+header {
   background-image:none;
-  background: linear-gradient(rgb(0,79,163), rgb(0,174,239), rgb(109,207,246));
+  /*background: #263238;*/
+  background: rgb(0,79,163);
 
 }
 
 header .intro-text .intro-lead-in {
-  color: #0d47a1;
+  color: white;
+  /*color: #0d47a1;*/
   font-weight: 700;
-  text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+  /*text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;*/
 }
 
 header .intro-text .intro-heading {
   /*color: #263238;*/
   /*rgb(100,174,239);*/
-  color: rgb(0,79,163);
+  /*color: rgb(0,79,163);*/
+  color: white;
   font-size: 50px;
 	font-weight: 600;
 	line-height: 50px;
 }
 
+header .intro-text a {
+  color: white;
+
+}
+
 a#logoName{
-  color: rgb(139,3,4);
+  /*color: rgb(139,3,4);*/
+  color:white;
   font-size: 40px;
 }
 
@@ -43,13 +52,14 @@ a#logoName{
   border-color: transparent;
 }
 
-div#navbarResponsive a { color: #000 } /*???*/
+div#navbarResponsive a { color: white; }
 
 div#navbarResponsive a:hover,
 div#navbarResponsive a:focus,
-div#navbarResponsive a:active {
+div#navbarResponsive a:active,
+div#navbarResponsive a.active {
   color: white;
-  background-color: rgb(139,3,4);
+  background-color: rgb(125,172,63);
 }
 
 .navbar-custom .navbar-collapse {
@@ -57,13 +67,24 @@ div#navbarResponsive a:active {
 }
 
 #services, #about {
-  background: linear-gradient(rgb(0,79,163), rgb(0,174,239), rgb(109,207,246));
+  background: white;
   /*height: 200px;*/
   /*background: red;*/ /* For browsers that do not support gradients */
   /*background: linear-gradient(rgb(0,79,163), rgb(0,174,239), rgb(109,207,246)); */ /* Standard syntax (must be last) */
 }
 
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: rgb(139,3,4);
+}
 
+.navbar-custom .navbar-nav > .active > a {
+  border-radius: 0;
+  color: white;
+  background-color: rgb(139,3,4);
+  opacity: 0.3;
+}
 /*test
   section #test {
     color: green;
