@@ -1,0 +1,71 @@
+.bg-light-blue {
+	background-color: #1c2a48;
+}
+
+section h2.section-heading {
+	font-size: 40px;
+}
+
+
+header .btn-xl {
+  background-color: rgb(125,172,63);
+}
+
+header{
+  background-image:none;
+  background: linear-gradient(rgb(0,79,163), rgb(0,174,239), rgb(109,207,246));
+
+}
+
+header .intro-text .intro-lead-in {
+  color: #0d47a1;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+}
+
+header .intro-text .intro-heading {
+  /*color: #263238;*/
+  /*rgb(100,174,239);*/
+  color: rgb(0,79,163);
+  font-size: 50px;
+	font-weight: 600;
+	line-height: 50px;
+}
+
+a#logoName{
+  color: rgb(139,3,4);
+  font-size: 40px;
+}
+
+.navbar.navbar-custom.navbar-fixed-top{
+  background-color: transparent;
+  background: rgba(79, 195, 247, 0.3);
+  border-color: transparent;
+}
+
+div#navbarResponsive a { color: #000 } /*???*/
+
+div#navbarResponsive a:hover,
+div#navbarResponsive a:focus,
+div#navbarResponsive a:active {
+  color: white;
+  background-color: rgb(139,3,4);
+}
+
+.navbar-custom .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.02);
+}
+
+#services, #about {
+  background: linear-gradient(rgb(0,79,163), rgb(0,174,239), rgb(109,207,246));
+  /*height: 200px;*/
+  /*background: red;*/ /* For browsers that do not support gradients */
+  /*background: linear-gradient(rgb(0,79,163), rgb(0,174,239), rgb(109,207,246)); */ /* Standard syntax (must be last) */
+}
+
+
+/*test
+  section #test {
+    color: green;
+  }
+*/

@@ -3,36 +3,38 @@
 @section('content')
 
 <!-- Navigation -->
-<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+<nav id="mainNav" class="navbar navbar-custom navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarResponsive">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+            <li class="nav-item">
+              <a class="nav-link navbar-brand page-scroll" id="logoName" href="#page-top">SBFIIS</a>
+            </li>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="nav navbar-nav navbar-right">
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#services">Services</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#portfolio">Portfolio</a>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#about">About</a>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#about">About</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#team">Team</a>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#team">Team</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -45,12 +47,19 @@
 <header>
     <div class="container">
         <div class="intro-text">
-            <div class="intro-lead-in">Welcome To Our Studio!</div>
-            <div class="intro-heading">It's Nice To Meet You</div>
+            <div class="intro-lead-in">Welcome!</div>
+            <div class="intro-heading">SUBIC BAY FREEPORT INVESTOR INFORMATION SYSTEM</div>
             <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
         </div>
     </div>
 </header>
+<!-- test
+<section>
+  <div class="container">
+    <div id="test">Some TEXT.</div>
+  </div>
+</section>
+-->
 
 <!-- Services Section -->
 <section id="services">
@@ -91,7 +100,7 @@
 </section>
 
 <!-- Portfolio Grid Section -->
-<section id="portfolio" class="bg-light-gray">
+<section id="portfolio" class="bg-light-blue">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -270,7 +279,7 @@
 </section>
 
 <!-- Team Section -->
-<section id="team" class="bg-light-gray">
+<section id="team" class="bg-light-blue">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
