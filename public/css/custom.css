@@ -6,11 +6,12 @@ section h2.section-heading {
 	font-size: 40px;
 }
 
-
+/*
 header .btn-xl {
-  background-color: rgb(125,172,63);
+  background-color: rgb(147,149,152);
+	border-color: white;
 }
-
+*/
 header {
   background-image:none;
   /*background: #263238;*/
@@ -76,13 +77,15 @@ div#navbarResponsive a.active {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: rgb(139,3,4);
+  background-color: rgb(125,172,63);
+
 }
 
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: rgb(139,3,4);
+  background-color: transparent;
+	background: rgb(125,172,63);
   opacity: 0.3;
 }
 /*test
@@ -90,3 +93,117 @@ ul.social-buttons li a:active {
     color: green;
   }
 */
+
+.navbar-custom .navbar-toggle {
+  background-color: rgb(125,172,63);
+  /*border-color: rgb(0,79,163);*/
+	border-color: transparent;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: rgb(0,79,163);
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  color: white;
+  background-color: #339933;
+  border-color: transparent;
+}
+
+/*
+section#contact .text-center .btn-xl {
+	background-color: gray;
+  border-color: transparent;
+
+}
+*/
+
+.btn-xl {
+  color: white;
+  background-color: #5cb85c;
+  border-color: transparent;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+section {
+  padding: 100px 0;
+	/*height: 300px;*/
+}
+
+section#services .row .service-heading {
+	color: black;
+}
+
+/*Requirements box css*/
+.container {
+    padding-top: 40px;
+}
+#details {
+    font-family: "Quicksand", sans-serif;
+    font-size: 60px;
+}
+#home-box > h2 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #75b1ae;
+}
+.price {
+    font-size: 25px;
+    float: left;
+}
+.requirement_header {
+    background: none repeat scroll 0% 0% rgb(0,79,163);
+    border-radius: 5px 5px 0px 0px;
+    transition: background 0.4s ease-out 0s;
+}
+.requirement_header h4 {
+    text-align: center;
+		line-height: 25px;
+    padding: 15px 0px;
+    margin: 0px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
+    color: white;
+}
+section#services .btn {
+
+    float: right;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+		padding: 10px 20px;
+ 		font-size: 40px;
+ 		border-radius: 10px;
+
+}
+.off {
+    text-decoration: line-through;
+    color: rgb(86, 86, 86);
+}
+.spaceBorder {
+    height: 2px;
+    background-color: rgb(0,79,163);
+}
+
+/*End of Requirements box css*/
+
+
+hr.styleDotted {
+
+	border-top: 5px dotted #8c8b8b;
+	border-bottom: 5px dotted #fff;
+
+}

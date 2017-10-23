@@ -11,15 +11,15 @@
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
             <li class="nav-item">
-              <a class="nav-link navbar-brand page-scroll" id="logoName" href="#page-top">SBFIIS</a>
+              <a class="nav-link navbar-brand" id="logoName" href="#page-top">SBFIIS</a>
             </li>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a href="#page-top"></a>
+                <li class="nav-item">
+                    <a href="#page-top">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link js-scroll-trigger" href="#services">Services</a>
@@ -49,7 +49,7 @@
         <div class="intro-text">
             <div class="intro-lead-in">Welcome!</div>
             <div class="intro-heading">SUBIC BAY FREEPORT INVESTOR INFORMATION SYSTEM</div>
-            <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+            <a href="#services" class="btn btn-xl">Tell Me More</a>
         </div>
     </div>
 </header>
@@ -67,35 +67,105 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Services</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h2 class="section-subheading">Business Registration/Business Renewal</h2>
             </div>
         </div>
-        <div class="row text-center">
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="service-heading">E-Commerce</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+
+        <!--Register Business-->
+        <div class="row equal">
+          <div class="col-md-6">
+              <h2 class="service-heading bg-info">
+                      <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-info"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                      </span>
+                        Register Business</h2>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          </div>
+          <div class="col-md-6">
+              <div class="container">
+                  <!-- Pack 1-->
+                  <div class="col-md-8" id="home-box">
+                      <div class="requirement_header">
+                          <h4>Requirements</h4>
+                          <div class="spaceBorder"></div>
+                      </div>
+                      <ul class="list-group">
+                          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span>requirement 1 requirement 1 requirement 1 requirement 1</li>
+                          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span>requirement 2</li>
+                          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span>requirement 3</li>
+                          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span>requirement 4</li>
+                          <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span>requirement 5</li>
+                          <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span>Sample</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <!--Register Consent-->
+          <div class="col-md-6">
+            <div class="form-group">
+                <?php //$date_entered = date('m/d/Y H:i:s'); ?>
+                <input type="hidden" value="<?php //echo $date_entered; ?>" name="dateregistered">
+                <input type="hidden" value="0" name="activate" />
+                <hr/">
+                <input type="checkbox" required name="terms" onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');" id="field_terms">   <label for="terms">I agree with the <a href="terms.php" title="You may read our terms and conditions by clicking on this link">terms and conditions</a> for Registration.</label><span class="req">* </span>
             </div>
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="service-heading">Responsive Design</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <div class="form-group">
+                <input class="btn btn-lg btn-success" type="submit" name="submit_reg" value="Register" style="float: left">
             </div>
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4 class="service-heading">Web Security</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          </div>
+        </div>
+
+        <br/>
+        <hr class="styleDotted">
+        <br/>
+
+        <!--Renew Business-->
+        <div class="row equal">
+          <div class="col-md-6">
+              <h2 class="service-heading bg-info">
+                      <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-info"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                      </span>
+                        Renew Business</h2>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          </div>
+
+            <div class="col-md-6">
+                <div class="container">
+                    <!-- Pack 1-->
+                    <div class="col-md-8" id="home-box">
+                        <div class="requirement_header">
+                            <h4>Requirements</h4>
+                            <div class="spaceBorder"></div>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span>requirement 1</li>
+                            <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span>requirement 2</li>
+                            <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span>requirement 3</li>
+                            <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span>requirement 4</li>
+                            <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span>requirement 5</li>
+                            <li class="list-group-item off"><span class="glyphicon glyphicon-remove"></span>Sample</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+              <!--Renew Consent-->
+              <div class="form-group" >
+                <?php //$date_entered = date('m/d/Y H:i:s'); ?>
+                <input type="hidden" value="<?php //echo $date_entered; ?>" name="dateregistered">
+                <input type="hidden" value="0" name="activate" />
+                <hr/>
+                <input type="checkbox" required name="terms" onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');" id="field_terms">   <label for="terms">I agree with the <a href="terms.php" title="You may read our terms and conditions by clicking on this link">terms and conditions</a> for Registration.</label><span class="req">* </span>
+              </div>
+              <div class="form-group">
+                <input class="btn btn-success" type="submit" name="submit_reg" value="Register" style="float: left">
+              </div>
             </div>
         </div>
+
     </div>
 </section>
 
@@ -375,8 +445,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Contact Us</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+              <h2 class="section-heading">Contact Us</h2>
+              <h3 class="section-subheading text-muted">Subic Bay Freeport Zone, Philippines<br>
+                Tel No.: (63) 47-252-0000
+              </h3>
+
             </div>
         </div>
         <div class="row">
